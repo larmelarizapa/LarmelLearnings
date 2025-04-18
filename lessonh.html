@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>  LarmelLearning</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/larmel.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/larmel.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename"> Larmel Arizapa</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Courses</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+                <li><a href="jsintro.html">Javascript Introduction</a> </a></li>
+                <li><a href="jsinter.html">JavaScript Intermediate</a></li>
+                <li><a href="javaintro.html">Java Introduction</a></li>
+                <li><a href="javainter.html">Java Intermediate</a></li>
+                
+                
+              </ul>
+              
+        </li>
+        <li><a href="resources.html"><i class="bi bi-robot"></i>&nbsp; Resources</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-question-octagon-fill">&nbsp;</i> &nbsp;<span>Take a Quiz</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="jsquiz.html">Js Introduction Quiz</a> </a></li>
+              <li><a href="jsinterquiz.html">Js Intermediate Quiz</a></li>
+              <li><a href="javaintroquiz.html">Java Introduction Quiz</a></li>
+              <li><a href="javainterquiz.html">Java Intermediate Quiz</a></li>
+                  
+                </ul>
+        
+          </li>
+        <li><a href="contact.html"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        
+      </ul>
+    </nav>
+
+  </header>
+  <main class="main">
+<!-- Lesson 1: Object-Oriented Programming (OOP) in Java -->
+<div class="lesson">
+    <h2> Object-Oriented Programming (OOP) in Java</h2>
+    <p><strong>Description:</strong> Object-Oriented Programming (OOP) is a programming paradigm based on the concept of objects, which contain both data and methods. OOP helps in organizing and managing code by modeling real-world entities. Java is an object-oriented language, and understanding its core concepts is essential for mastering Java development.</p>
+  </div>
+  
+  <!-- Lesson 2: Classes and Objects -->
+  <div class="lesson">
+    <h2> Classes and Objects</h2>
+    <p><strong>Description:</strong> A class is a blueprint for creating objects, while an object is an instance of a class. The class defines the properties (attributes) and behaviors (methods) that its objects will have.</p>
+    <pre><code>
+  // Defining a class:
+  public class Car {
+      String brand;
+      int year;
+  
+      // Constructor to initialize the object
+      public Car(String brand, int year) {
+          this.brand = brand;
+          this.year = year;
+      }
+  
+      // Method to display car details
+      public void displayInfo() {
+          System.out.println("Brand: " + brand + ", Year: " + year);
+      }
+  }
+  
+  // Creating objects:
+  public class Main {
+      public static void main(String[] args) {
+          Car car1 = new Car("Toyota", 2020);
+          car1.displayInfo();  // Output: Brand: Toyota, Year: 2020
+      }
+  }
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 3: Encapsulation -->
+  <div class="lesson">
+    <h2> Encapsulation</h2>
+    <p><strong>Description:</strong> Encapsulation is the practice of bundling the data (attributes) and methods that operate on the data into a single unit called a class. It also involves restricting access to certain components of an object and only exposing necessary information through public methods.</p>
+    <pre><code>
+  // Example of Encapsulation:
+  public class Person {
+      private String name;
+      private int age;
+  
+      // Getter and Setter methods
+      public String getName() {
+          return name;
+      }
+  
+      public void setName(String name) {
+          this.name = name;
+      }
+  
+      public int getAge() {
+          return age;
+      }
+  
+      public void setAge(int age) {
+          if(age > 0) {
+              this.age = age;
+          } else {
+              System.out.println("Age must be positive");
+          }
+      }
+  }
+  
+  public class Main {
+      public static void main(String[] args) {
+          Person person = new Person();
+          person.setName("Larmel");
+          person.setAge(19);
+          System.out.println(person.getName() + " is " + person.getAge() + " years old.");
+      }
+  }
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 4: Inheritance -->
+  <div class="lesson">
+    <h2> Inheritance</h2>
+    <p><strong>Description:</strong> Inheritance allows one class to inherit the fields and methods of another class. The class that inherits is called the subclass (child class), and the class being inherited from is called the superclass (parent class). Inheritance promotes code reuse and can create a hierarchy of classes.</p>
+    <pre><code>
+  // Example of Inheritance:
+  class Animal {
+      public void sound() {
+          System.out.println("Some sound");
+      }
+  }
+  
+  class Dog extends Animal {
+      public void sound() {
+          System.out.println("Bark");
+      }
+  }
+  
+  public class Main {
+      public static void main(String[] args) {
+          Dog dog = new Dog();
+          dog.sound();  // Output: Bark
+      }
+  }
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 5: Polymorphism -->
+  <div class="lesson">
+    <h2> Polymorphism</h2>
+    <p><strong>Description:</strong> Polymorphism allows one interface to be used for different underlying data types. The most common types of polymorphism are method overloading (compile-time polymorphism) and method overriding (runtime polymorphism). Polymorphism enhances flexibility and scalability in the code.</p>
+    <pre><code>
+  // Example of Method Overloading (Compile-Time Polymorphism):
+  class Calculator {
+      public int add(int a, int b) {
+          return a + b;
+      }
+  
+      public double add(double a, double b) {
+          return a + b;
+      }
+  }
+  
+  public class Main {
+      public static void main(String[] args) {
+          Calculator calc = new Calculator();
+          System.out.println(calc.add(5, 10));    // Output: 15
+          System.out.println(calc.add(5.5, 10.5)); // Output: 16.0
+      }
+  }
+  
+  // Example of Method Overriding (Runtime Polymorphism):
+  class Animal {
+      public void sound() {
+          System.out.println("Some sound");
+      }
+  }
+  
+  class Dog extends Animal {
+      @Override
+      public void sound() {
+          System.out.println("Bark");
+      }
+  }
+  
+  public class Main {
+      public static void main(String[] args) {
+          Animal animal = new Dog(); // Upcasting
+          animal.sound();  // Output: Bark (Method overridden in Dog class)
+      }
+  }
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 6: Abstraction -->
+  <div class="lesson">
+    <h2> Abstraction</h2>
+    <p><strong>Description:</strong> Abstraction is the concept of hiding the implementation details and showing only the essential features of an object. In Java, abstraction is achieved using abstract classes and interfaces. An abstract class cannot be instantiated and can have abstract methods, which must be implemented by subclasses.</p>
+    <pre><code>
+  // Example of Abstraction using an Abstract Class:
+  abstract class Animal {
+      public abstract void sound();  // Abstract method (no body)
+  }
+  
+  class Dog extends Animal {
+      public void sound() {
+          System.out.println("Bark");
+      }
+  }
+  
+  public class Main {
+      public static void main(String[] args) {
+          Animal dog = new Dog();
+          dog.sound();  // Output: Bark
+      }
+  }
+    </code></pre>
+  </div>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>Created by <strong>Larmel Arizapa</strong></p>
+      <p>Contact: <a href="mailto:larmellearning@gmail.com">larmellearning@gmail.com</a></p>
+      <p>&copy; 2025 All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

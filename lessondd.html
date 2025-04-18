@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>  LarmelLearning</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/larmel.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/larmel.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename"> Larmel Arizapa</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Courses</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+                <li><a href="jsintro.html">Javascript Introduction</a> </a></li>
+                <li><a href="jsinter.html">JavaScript Intermediate</a></li>
+                <li><a href="javaintro.html">Java Introduction</a></li>
+                <li><a href="javainter.html">Java Intermediate</a></li>
+                
+                
+              </ul>
+              
+        </li>
+        <li><a href="resources.html"><i class="bi bi-robot"></i>&nbsp; Resources</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-question-octagon-fill">&nbsp;</i> &nbsp;<span>Take a Quiz</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="jsquiz.html">Js Introduction Quiz</a> </a></li>
+              <li><a href="jsinterquiz.html">Js Intermediate Quiz</a></li>
+              <li><a href="javaintroquiz.html">Java Introduction Quiz</a></li>
+              <li><a href="javainterquiz.html">Java Intermediate Quiz</a></li>
+                  
+                </ul>
+        
+          </li>
+        <li><a href="contact.html"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        
+      </ul>
+    </nav>
+
+  </header>
+  <main class="main">
+<!-- Lesson 1: Introduction to ArrayList -->
+<div class="lesson">
+    <h2> Introduction to ArrayList</h2>
+    <p><strong>Description:</strong> <code>ArrayList</code> is a resizable array in Java. It is part of the <code>java.util</code> package and allows dynamic memory allocation, unlike regular arrays.</p>
+  </div>
+  
+  <!-- Lesson 2: Creating an ArrayList -->
+  <div class="lesson">
+    <h2> Creating an ArrayList</h2>
+    <p><strong>Description:</strong> Use the <code>ArrayList</code> class to create a dynamic list of elements.</p>
+    <pre><code>
+  import java.util.ArrayList;
+  
+  public class Example {
+    public static void main(String[] args) {
+      ArrayList<String> fruits = new ArrayList<String>();
+      fruits.add("Apple");
+      fruits.add("Banana");
+      fruits.add("Mango");
+  
+      System.out.println(fruits); // Output: [Apple, Banana, Mango]
+    }
+  }
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 3: Accessing Elements -->
+  <div class="lesson">
+    <h2> Accessing Elements</h2>
+    <p><strong>Description:</strong> Use <code>get(index)</code> method to access elements from an ArrayList.</p>
+    <pre><code>
+  ArrayList<String> fruits = new ArrayList<String>();
+  fruits.add("Apple");
+  fruits.add("Banana");
+  
+  System.out.println(fruits.get(0)); // Output: Apple
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 4: Modifying Elements -->
+  <div class="lesson">
+    <h2> Modifying Elements</h2>
+    <p><strong>Description:</strong> Use <code>set(index, element)</code> to modify a specific element.</p>
+    <pre><code>
+  ArrayList<String> fruits = new ArrayList<String>();
+  fruits.add("Apple");
+  fruits.set(0, "Orange");
+  
+  System.out.println(fruits); // Output: [Orange]
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 5: Removing Elements -->
+  <div class="lesson">
+    <h2> Removing Elements</h2>
+    <p><strong>Description:</strong> Use <code>remove(index)</code> or <code>remove(object)</code> to delete elements.</p>
+    <pre><code>
+  ArrayList<String> fruits = new ArrayList<String>();
+  fruits.add("Apple");
+  fruits.add("Banana");
+  
+  fruits.remove("Apple"); // or fruits.remove(0);
+  
+  System.out.println(fruits); // Output: [Banana]
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 6: Looping Through an ArrayList -->
+  <div class="lesson">
+    <h2> Looping Through an ArrayList</h2>
+    <p><strong>Description:</strong> You can use a <code>for</code> loop, <code>for-each</code> loop, or <code>forEach</code> method to iterate through elements.</p>
+    <pre><code>
+  ArrayList<String> fruits = new ArrayList<String>();
+  fruits.add("Apple");
+  fruits.add("Banana");
+  
+  for (String fruit : fruits) {
+    System.out.println(fruit);
+  }
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 7: ArrayList Methods -->
+  <div class="lesson">
+    <h2> Common ArrayList Methods</h2>
+    <p><strong>Description:</strong> Useful methods in ArrayList include:</p>
+    <ul>
+      <li><code>size()</code> – Returns the number of elements</li>
+      <li><code>contains()</code> – Checks if a value exists</li>
+      <li><code>clear()</code> – Removes all elements</li>
+      <li><code>isEmpty()</code> – Checks if list is empty</li>
+    </ul>
+    <pre><code>
+  ArrayList<String> fruits = new ArrayList<String>();
+  fruits.add("Mango");
+  
+  System.out.println(fruits.size());       // 1
+  System.out.println(fruits.contains("Mango")); // true
+  fruits.clear();
+  System.out.println(fruits.isEmpty());    // true
+    </code></pre>
+  </div>
+  
+  
+  
+  </main>
+  
+  
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>Created by <strong>Larmel Arizapa</strong></p>
+      <p>Contact: <a href="mailto:larmellearning@gmail.com">larmellearning@gmail.com</a></p>
+      <p>&copy; 2025 All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

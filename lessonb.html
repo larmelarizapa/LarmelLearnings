@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>  LarmelLearning</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/larmel.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/larmel.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename"> Larmel Arizapa</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Courses</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+                <li><a href="jsintro.html">Javascript Introduction</a> </a></li>
+                <li><a href="jsinter.html">JavaScript Intermediate</a></li>
+                <li><a href="javaintro.html">Java Introduction</a></li>
+                <li><a href="javainter.html">Java Intermediate</a></li>
+                
+                
+              </ul>
+              
+        </li>
+        <li><a href="resources.html"><i class="bi bi-robot"></i>&nbsp; Resources</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-question-octagon-fill">&nbsp;</i> &nbsp;<span>Take a Quiz</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="jsquiz.html">Js Introduction Quiz</a> </a></li>
+              <li><a href="jsinterquiz.html">Js Intermediate Quiz</a></li>
+              <li><a href="javaintroquiz.html">Java Introduction Quiz</a></li>
+              <li><a href="javainterquiz.html">Java Intermediate Quiz</a></li>
+                  
+                </ul>
+        
+          </li>
+        <li><a href="contact.html"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        
+      </ul>
+    </nav>
+
+  </header>
+  <main class="main">
+<!-- Lesson 1: Variables and Data Types in Java -->
+<div class="lesson">
+    <h2> Variables and Data Types in Java</h2>
+    <p><strong>Description:</strong> In Java, variables are used to store data values. Java is a statically typed language, meaning you must specify the type of data a variable will hold when you declare it. There are several data types available in Java, each used for different kinds of values.</p>
+  </div>
+  
+  <!-- Lesson 2: Declaring Variables -->
+  <div class="lesson">
+    <h2> Declaring Variables</h2>
+    <p><strong>Description:</strong> In Java, you must declare a variable before using it. When declaring a variable, you specify its type and its name. For example:</p>
+    <pre><code>
+  // Declaring a variable
+  int age;  // Declares an integer variable named 'age'
+  
+  // Initializing a variable
+  age = 25;  // Assigning a value to 'age'
+  
+  // You can also declare and initialize the variable in one line:
+  int height = 170;  // Declares and initializes 'height' as an integer
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 3: Primitive Data Types -->
+  <div class="lesson">
+    <h2> Primitive Data Types</h2>
+    <p><strong>Description:</strong> Java has 8 primitive data types: <code>byte</code>, <code>short</code>, <code>int</code>, <code>long</code>, <code>float</code>, <code>double</code>, <code>char</code>, and <code>boolean</code>. These are the building blocks for more complex data types. Let’s look at each one:</p>
+    <pre><code>
+  // Integer types
+  byte a = 100;        // 8-bit integer
+  short b = 1500;      // 16-bit integer
+  int c = 10000;       // 32-bit integer (most commonly used)
+  long d = 100000L;    // 64-bit integer (append 'L' for long)
+  
+  // Floating point types
+  float e = 10.5f;     // 32-bit floating point number (append 'f' for float)
+  double f = 20.99;    // 64-bit floating point number (default type for floating point literals)
+  
+  // Character type
+  char g = 'A';        // 16-bit Unicode character
+  
+  // Boolean type
+  boolean h = true;    // true or false
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 4: Non-Primitive Data Types -->
+  <div class="lesson">
+    <h2> Non-Primitive Data Types</h2>
+    <p><strong>Description:</strong> Non-primitive data types (also known as reference types) include classes, interfaces, and arrays. They store references to objects rather than actual data values.</p>
+    <pre><code>
+  // Example of using an array (non-primitive data type)
+  int[] numbers = {1, 2, 3, 4, 5};  // Declaring and initializing an array
+  
+  // Example of a class (non-primitive data type)
+  class Person {
+      String name;
+      int age;
+      
+      public Person(String name, int age) {
+          this.name = name;
+          this.age = age;
+      }
+  }
+  
+  // Creating an object of the Person class
+  Person person1 = new Person("Larmel", 19);
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 5: Type Casting in Java -->
+  <div class="lesson">
+    <h2> Type Casting in Java</h2>
+    <p><strong>Description:</strong> Type casting is the process of converting one data type into another. Java supports both implicit (automatic) and explicit (manual) type casting:</p>
+    <pre><code>
+  // Implicit Casting (Widening): smaller types are automatically converted to larger types
+  int intValue = 100;
+  long longValue = intValue;  // No explicit cast needed
+  
+  // Explicit Casting (Narrowing): larger types must be manually converted to smaller types
+  long bigValue = 100000L;
+  int smallValue = (int) bigValue;  // Casting required
+  
+  // Example with float to int conversion
+  float floatValue = 10.75f;
+  int intFromFloat = (int) floatValue;  // Result: 10 (fraction part is discarded)
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 6: String Data Type -->
+  <div class="lesson">
+    <h2> String Data Type</h2>
+    <p><strong>Description:</strong> The <code>String</code> class is used to represent a sequence of characters. Unlike primitive data types, strings are non-primitive objects. You can create a string using double quotes:</p>
+    <pre><code>
+  // Declaring a string variable
+  String name = "Larmel";
+  
+  // String concatenation
+  String greeting = "Hello, " + name + "!";  // Concatenate strings
+  System.out.println(greeting);  // Output: Hello, Larmel!
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 7: Constants in Java -->
+  <div class="lesson">
+    <h2> Constants in Java</h2>
+    <p><strong>Description:</strong> Constants are variables whose values cannot be changed once assigned. In Java, constants are declared using the <code>final</code> keyword.</p>
+    <pre><code>
+  // Declaring a constant
+  final double PI = 3.14159;  // PI will always hold this value
+  
+  // Trying to change the value of PI will result in a compile-time error
+  // PI = 3.14;  // Uncommenting this line will cause an error
+    </code></pre>
+  </div>
+  
+  
+  </main>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>Created by <strong>Larmel Arizapa</strong></p>
+      <p>Contact: <a href="mailto:larmellearning@gmail.com">larmellearning@gmail.com</a></p>
+      <p>&copy; 2025 All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

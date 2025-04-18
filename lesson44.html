@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>  LarmelLearning</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/larmel.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/larmel.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename"> Larmel Arizapa</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Courses</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+                <li><a href="jsintro.html">Javascript Introduction</a> </a></li>
+                <li><a href="jsinter.html">JavaScript Intermediate</a></li>
+                <li><a href="javaintro.html">Java Introduction</a></li>
+                <li><a href="javainter.html">Java Intermediate</a></li>
+                
+                
+              </ul>
+              
+        </li>
+        <li><a href="resources.html"><i class="bi bi-robot"></i>&nbsp; Resources</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-question-octagon-fill">&nbsp;</i> &nbsp;<span>Take a Quiz</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="jsquiz.html">Js Introduction Quiz</a> </a></li>
+              <li><a href="jsinterquiz.html">Js Intermediate Quiz</a></li>
+              <li><a href="javaintroquiz.html">Java Introduction Quiz</a></li>
+              <li><a href="javainterquiz.html">Java Intermediate Quiz</a></li>
+                  
+                </ul>
+        
+          </li>
+        <li><a href="contact.html"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        
+      </ul>
+    </nav>
+
+  </header>
+  <main class="main">
+ <!-- Lesson 1: Introduction to the `this` Keyword -->
+<div class="lesson">
+    <h2> Introduction to the <code>this</code> Keyword</h2>
+    <p><strong>Description:</strong> In JavaScript, <code>this</code> is a special keyword that refers to the current context in which a function is being executed. The value of <code>this</code> depends on how the function is called, not where it's defined.</p>
+    <pre><code>
+  // Example: Global Context
+  console.log(this); // In the global context, "this" refers to the global object (window in browsers)
+  
+  function showThis() {
+    console.log(this); // In a regular function, "this" refers to the global object (window in browsers)
+  }
+  
+  showThis();
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 2: The `this` Keyword in Objects -->
+  <div class="lesson">
+    <h2> The <code>this</code> Keyword in Objects</h2>
+    <p><strong>Description:</strong> Inside an object method, <code>this</code> refers to the object itself. This allows access to the properties and methods of the object.</p>
+    <pre><code>
+  let person = {
+    name: "Larmel",
+    greet: function() {
+      console.log("Hello, " + this.name);
+    }
+  };
+  
+  person.greet(); // "Hello, Larmel"
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 3: The `this` Keyword in Constructor Functions -->
+  <div class="lesson">
+    <h2> The <code>this</code> Keyword in Constructor Functions</h2>
+    <p><strong>Description:</strong> In a constructor function, <code>this</code> refers to the newly created object that the function is constructing.</p>
+    <pre><code>
+  function Person(name, age) {
+    this.name = name;
+    this.age = age;
+    this.greet = function() {
+      console.log("Hello, " + this.name);
+    };
+  }
+  
+  let person1 = new Person("Larmel", 19);
+  person1.greet(); // "Hello, Larmel"
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 4: The `this` Keyword in Arrow Functions -->
+  <div class="lesson">
+    <h2> The <code>this</code> Keyword in Arrow Functions</h2>
+    <p><strong>Description:</strong> Arrow functions do not have their own <code>this</code> value. Instead, they inherit <code>this</code> from the surrounding (lexical) scope.</p>
+    <pre><code>
+  let person = {
+    name: "Larmel",
+    greet: function() {
+      setTimeout(() => {
+        console.log("Hello, " + this.name); // "this" refers to the person object, as it is inherited from the surrounding scope
+      }, 1000);
+    }
+  };
+  
+  person.greet(); // "Hello, Larmel"
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 5: `this` in Event Handlers -->
+  <div class="lesson">
+    <h2> <code>this</code> in Event Handlers</h2>
+    <p><strong>Description:</strong> In event handlers, <code>this</code> refers to the element that fired the event. This is useful when you need to interact with the element inside the event handler.</p>
+    <pre><code>
+  let button = document.getElementById("myButton");
+  button.addEventListener('click', function() {
+    console.log(this); // "this" refers to the button element
+  });
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 6: `this` in Call, Apply, and Bind -->
+  <div class="lesson">
+    <h2> <code>this</code> in <code>call()</code>, <code>apply()</code>, and <code>bind()</code></h2>
+    <p><strong>Description:</strong> The <code>call()</code>, <code>apply()</code>, and <code>bind()</code> methods allow you to explicitly set the value of <code>this</code> for any function. These methods are useful when you want to control the context of <code>this</code> manually.</p>
+    <pre><code>
+  function greet() {
+    console.log("Hello, " + this.name);
+  }
+  
+  let person = { name: "Larmel" };
+  
+  greet.call(person);  // "Hello, Larmel" - sets "this" to the person object
+  greet.apply(person); // "Hello, Larmel" - sets "this" to the person object
+  let greetPerson = greet.bind(person);
+  greetPerson(); // "Hello, Larmel" - bind creates a new function with "this" set to person
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 7: `this` in setTimeout and setInterval -->
+  <div class="lesson">
+    <h2> <code>this</code> in <code>setTimeout()</code> and <code>setInterval()</code></h2>
+    <p><strong>Description:</strong> In <code>setTimeout()</code> and <code>setInterval()</code>, <code>this</code> refers to the global object, unless you use an arrow function or bind a specific context.</p>
+    <pre><code>
+  let person = {
+    name: "Larmel",
+    greet: function() {
+      setTimeout(function() {
+        console.log("Hello, " + this.name); // "this" refers to the global object (window in browsers)
+      }, 1000);
+    }
+  };
+  
+  person.greet(); // Undefined, because "this" refers to the global object
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 8: Fixing `this` in setTimeout -->
+  <div class="lesson">
+    <h2> Fixing <code>this</code> in <code>setTimeout()</code></h2>
+    <p><strong>Description:</strong> To fix the <code>this</code> issue in regular functions inside <code>setTimeout()</code>, you can use an arrow function or bind the function.</p>
+    <pre><code>
+  let person = {
+    name: "Larmel",
+    greet: function() {
+      setTimeout(() => {
+        console.log("Hello, " + this.name); // "this" now correctly refers to the person object
+      }, 1000);
+    }
+  };
+  
+  person.greet(); // "Hello, Larmel"
+    </code></pre>
+  </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>Created by <strong>Larmel Arizapa</strong></p>
+      <p>Contact: <a href="mailto:larmellearning@gmail.com">larmellearning@gmail.com</a></p>
+      <p>&copy; 2025 All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

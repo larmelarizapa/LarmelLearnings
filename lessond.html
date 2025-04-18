@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>  LarmelLearning</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/larmel.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/larmel.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename"> Larmel Arizapa</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Courses</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+                <li><a href="jsintro.html">Javascript Introduction</a> </a></li>
+                <li><a href="jsinter.html">JavaScript Intermediate</a></li>
+                <li><a href="javaintro.html">Java Introduction</a></li>
+                <li><a href="javainter.html">Java Intermediate</a></li>
+                
+                
+              </ul>
+              
+        </li>
+        <li><a href="resources.html"><i class="bi bi-robot"></i>&nbsp; Resources</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-question-octagon-fill">&nbsp;</i> &nbsp;<span>Take a Quiz</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="jsquiz.html">Js Introduction Quiz</a> </a></li>
+              <li><a href="jsinterquiz.html">Js Intermediate Quiz</a></li>
+              <li><a href="javaintroquiz.html">Java Introduction Quiz</a></li>
+              <li><a href="javainterquiz.html">Java Intermediate Quiz</a></li>
+                  
+                </ul>
+        
+          </li>
+        <li><a href="contact.html"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        
+      </ul>
+    </nav>
+
+  </header>
+  <main class="main">
+<!-- Lesson 1: Conditional Statements in Java -->
+<div class="lesson">
+    <h2> Conditional Statements in Java</h2>
+    <p><strong>Description:</strong> Conditional statements allow you to make decisions in your Java code. These statements evaluate conditions and execute code blocks based on whether the conditions are true or false.</p>
+  </div>
+  
+  <!-- Lesson 2: if Statement -->
+  <div class="lesson">
+    <h2> if Statement</h2>
+    <p><strong>Description:</strong> The <code>if</code> statement is used to execute a block of code if a specified condition is true. If the condition is false, the block is skipped.</p>
+    <pre><code>
+  // Syntax:
+  if (condition) {
+      // code to be executed if the condition is true
+  }
+  
+  int age = 18;
+  if (age >= 18) {
+      System.out.println("You are an adult.");
+  } else {
+      System.out.println("You are a minor.");
+  }
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 3: if-else Statement -->
+  <div class="lesson">
+    <h2> if-else Statement</h2>
+    <p><strong>Description:</strong> The <code>if-else</code> statement allows you to specify an alternative block of code to execute if the condition is false.</p>
+    <pre><code>
+  // Syntax:
+  if (condition) {
+      // code to be executed if the condition is true
+  } else {
+      // code to be executed if the condition is false
+  }
+  
+  int age = 16;
+  if (age >= 18) {
+      System.out.println("You are an adult.");
+  } else {
+      System.out.println("You are a minor.");
+  }
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 4: if-else if-else Statement -->
+  <div class="lesson">
+    <h2> if-else if-else Statement</h2>
+    <p><strong>Description:</strong> The <code>if-else if-else</code> statement allows you to check multiple conditions. Once a condition evaluates to true, the corresponding block is executed, and the remaining blocks are skipped.</p>
+    <pre><code>
+  // Syntax:
+  if (condition1) {
+      // code to be executed if condition1 is true
+  } else if (condition2) {
+      // code to be executed if condition2 is true
+  } else {
+      // code to be executed if both conditions are false
+  }
+  
+  int score = 85;
+  if (score >= 90) {
+      System.out.println("Grade: A");
+  } else if (score >= 75) {
+      System.out.println("Grade: B");
+  } else if (score >= 60) {
+      System.out.println("Grade: C");
+  } else {
+      System.out.println("Grade: F");
+  }
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 5: Nested if Statements -->
+  <div class="lesson">
+    <h2> Nested if Statements</h2>
+    <p><strong>Description:</strong> A nested <code>if</code> statement is an <code>if</code> statement inside another <code>if</code> statement. It allows you to check multiple levels of conditions.</p>
+    <pre><code>
+  // Syntax:
+  if (condition1) {
+      if (condition2) {
+          // code to be executed if both conditions are true
+      }
+  }
+  
+  int age = 25;
+  int income = 50000;
+  
+  if (age >= 18) {
+      if (income >= 40000) {
+          System.out.println("You are eligible for a loan.");
+      } else {
+          System.out.println("You do not meet the income requirement for a loan.");
+      }
+  } else {
+      System.out.println("You must be 18 or older to apply for a loan.");
+  }
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 6: switch Statement -->
+  <div class="lesson">
+    <h2> switch Statement</h2>
+    <p><strong>Description:</strong> The <code>switch</code> statement is used to select one of many code blocks to be executed based on the value of a variable. It is useful when you need to compare the same variable against different values.</p>
+    <pre><code>
+  // Syntax:
+  switch (expression) {
+      case value1:
+          // code to be executed if expression == value1
+          break;
+      case value2:
+          // code to be executed if expression == value2
+          break;
+      default:
+          // code to be executed if expression doesn't match any case
+  }
+  
+  int day = 3;
+  switch (day) {
+      case 1:
+          System.out.println("Monday");
+          break;
+      case 2:
+          System.out.println("Tuesday");
+          break;
+      case 3:
+          System.out.println("Wednesday");
+          break;
+      case 4:
+          System.out.println("Thursday");
+          break;
+      case 5:
+          System.out.println("Friday");
+          break;
+      case 6:
+          System.out.println("Saturday");
+          break;
+      case 7:
+          System.out.println("Sunday");
+          break;
+      default:
+          System.out.println("Invalid day");
+  }
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 7: Ternary Operator -->
+  <div class="lesson">
+    <h2> Ternary Operator</h2>
+    <p><strong>Description:</strong> The <code>ternary operator</code> is a shorthand for an <code>if-else</code> statement. It evaluates a condition and returns one of two values based on whether the condition is true or false.</p>
+    <pre><code>
+  // Syntax: condition ? value_if_true : value_if_false;
+  int age = 20;
+  String result = (age >= 18) ? "Adult" : "Minor";  // If age >= 18, result = "Adult"; else "Minor"
+  System.out.println(result);  // Output: Adult
+    </code></pre>
+  </div>
+  
+  </main>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>Created by <strong>Larmel Arizapa</strong></p>
+      <p>Contact: <a href="mailto:larmellearning@gmail.com">larmellearning@gmail.com</a></p>
+      <p>&copy; 2025 All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

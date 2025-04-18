@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>  LarmelLearning</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/larmel.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/larmel.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename"> Larmel Arizapa</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Courses</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+                <li><a href="jsintro.html">Javascript Introduction</a> </a></li>
+                <li><a href="jsinter.html">JavaScript Intermediate</a></li>
+                <li><a href="javaintro.html">Java Introduction</a></li>
+                <li><a href="javainter.html">Java Intermediate</a></li>
+                
+                
+              </ul>
+              
+        </li>
+        <li><a href="resources.html"><i class="bi bi-robot"></i>&nbsp; Resources</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-question-octagon-fill">&nbsp;</i> &nbsp;<span>Take a Quiz</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="jsquiz.html">Js Introduction Quiz</a> </a></li>
+              <li><a href="jsinterquiz.html">Js Intermediate Quiz</a></li>
+              <li><a href="javaintroquiz.html">Java Introduction Quiz</a></li>
+              <li><a href="javainterquiz.html">Java Intermediate Quiz</a></li>
+                  
+                </ul>
+        
+          </li>
+        <li><a href="contact.html"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        
+      </ul>
+    </nav>
+
+  </header>
+  <main class="main">
+<!-- Lesson 1: Inheritance in Java -->
+<div class="lesson">
+    <h2> Inheritance in Java</h2>
+    <p><strong>Description:</strong> Inheritance is a mechanism in Java by which one class can inherit fields and methods from another class. The class that inherits the fields and methods is called the subclass (or child class), while the class being inherited from is called the superclass (or parent class). Inheritance helps promote code reusability and establishes a hierarchical relationship between classes.</p>
+  </div>
+  
+  <!-- Lesson 2: Basic Inheritance -->
+  <div class="lesson">
+    <h2> Basic Inheritance</h2>
+    <p><strong>Description:</strong> A subclass can inherit methods and attributes from a superclass, allowing for reuse of code. The subclass can also add new methods or override inherited methods.</p>
+    <pre><code>
+  // Superclass (Parent class)
+  class Animal {
+      String name;
+  
+      public void eat() {
+          System.out.println("This animal eats food.");
+      }
+  }
+  
+  // Subclass (Child class)
+  class Dog extends Animal {
+      public void bark() {
+          System.out.println("The dog barks.");
+      }
+  }
+  
+  public class Main {
+      public static void main(String[] args) {
+          Dog dog = new Dog();
+          dog.name = "Buddy"; // Inherited from Animal
+          dog.eat(); // Inherited from Animal
+          dog.bark(); // Defined in Dog
+          System.out.println("Dog's name is " + dog.name); // Output: Dog's name is Buddy
+      }
+  }
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 3: Method Overriding -->
+  <div class="lesson">
+    <h2> Method Overriding</h2>
+    <p><strong>Description:</strong> Method overriding allows a subclass to provide a specific implementation of a method that is already defined in its superclass. The method in the subclass must have the same signature (name, return type, and parameters) as the method in the superclass.</p>
+    <pre><code>
+  // Superclass (Parent class)
+  class Animal {
+      public void sound() {
+          System.out.println("This animal makes a sound.");
+      }
+  }
+  
+  // Subclass (Child class) - Method overriding
+  class Dog extends Animal {
+      @Override
+      public void sound() {
+          System.out.println("The dog barks.");
+      }
+  }
+  
+  public class Main {
+      public static void main(String[] args) {
+          Animal myAnimal = new Animal();
+          Animal myDog = new Dog();  // Upcasting
+  
+          myAnimal.sound();  // Output: This animal makes a sound.
+          myDog.sound();     // Output: The dog barks.
+      }
+  }
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 4: Using the super Keyword -->
+  <div class="lesson">
+    <h2> Using the <code>super</code> Keyword</h2>
+    <p><strong>Description:</strong> The <code>super</code> keyword is used to refer to the superclass (parent class) of the current object. It can be used to access superclass methods and constructors. It is especially useful when method overriding occurs, and you want to call the superclass method.</p>
+    <pre><code>
+  // Superclass (Parent class)
+  class Animal {
+      public void sound() {
+          System.out.println("This animal makes a sound.");
+      }
+  }
+  
+  // Subclass (Child class)
+  class Dog extends Animal {
+      @Override
+      public void sound() {
+          super.sound();  // Calling the superclass method
+          System.out.println("The dog barks.");
+      }
+  }
+  
+  public class Main {
+      public static void main(String[] args) {
+          Dog dog = new Dog();
+          dog.sound();  // Output: This animal makes a sound.
+                        //         The dog barks.
+      }
+  }
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 5: Constructor in Inheritance -->
+  <div class="lesson">
+    <h2> Constructor in Inheritance</h2>
+    <p><strong>Description:</strong> When a subclass is created, its constructor is called. However, if the subclass constructor does not explicitly call the superclass constructor, Java will call the default constructor of the superclass automatically. You can call a specific superclass constructor using the <code>super()</code> keyword.</p>
+    <pre><code>
+  // Superclass (Parent class)
+  class Animal {
+      Animal() {
+          System.out.println("Animal constructor called.");
+      }
+  }
+  
+  // Subclass (Child class)
+  class Dog extends Animal {
+      Dog() {
+          super();  // Calling the superclass constructor explicitly
+          System.out.println("Dog constructor called.");
+      }
+  }
+  
+  public class Main {
+      public static void main(String[] args) {
+          Dog dog = new Dog();  // Output: Animal constructor called.
+                                //         Dog constructor called.
+      }
+  }
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 6: Types of Inheritance in Java -->
+  <div class="lesson">
+    <h2> Types of Inheritance in Java</h2>
+    <p><strong>Description:</strong> In Java, there are several types of inheritance:</p>
+    <ul>
+      <li><strong>Single Inheritance:</strong> A subclass inherits from one superclass (as shown in previous examples).</li>
+      <li><strong>Multilevel Inheritance:</strong> A subclass can inherit from another subclass, forming a chain.</li>
+      <li><strong>Hierarchical Inheritance:</strong> Multiple subclasses inherit from the same superclass.</li>
+      <li><strong>Multiple Inheritance:</strong> Java does not support multiple inheritance directly with classes. However, it can be achieved through interfaces.</li>
+    </ul>
+    <pre><code>
+  // Example of Multilevel Inheritance:
+  class Animal {
+      public void sound() {
+          System.out.println("This animal makes a sound.");
+      }
+  }
+  
+  class Dog extends Animal {
+      public void bark() {
+          System.out.println("The dog barks.");
+      }
+  }
+  
+  class Puppy extends Dog {
+      public void play() {
+          System.out.println("The puppy plays.");
+      }
+  }
+  
+  public class Main {
+      public static void main(String[] args) {
+          Puppy puppy = new Puppy();
+          puppy.sound();  // Inherited from Animal
+          puppy.bark();   // Inherited from Dog
+          puppy.play();   // Defined in Puppy
+      }
+  }
+    </code></pre>
+  </div>
+  
+  
+  </main>
+  
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>Created by <strong>Larmel Arizapa</strong></p>
+      <p>Contact: <a href="mailto:larmellearning@gmail.com">larmellearning@gmail.com</a></p>
+      <p>&copy; 2025 All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

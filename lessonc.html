@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>  LarmelLearning</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/larmel.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/larmel.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename"> Larmel Arizapa</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Courses</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+                <li><a href="jsintro.html">Javascript Introduction</a> </a></li>
+                <li><a href="jsinter.html">JavaScript Intermediate</a></li>
+                <li><a href="javaintro.html">Java Introduction</a></li>
+                <li><a href="javainter.html">Java Intermediate</a></li>
+                
+                
+              </ul>
+              
+        </li>
+        <li><a href="resources.html"><i class="bi bi-robot"></i>&nbsp; Resources</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-question-octagon-fill">&nbsp;</i> &nbsp;<span>Take a Quiz</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="jsquiz.html">Js Introduction Quiz</a> </a></li>
+              <li><a href="jsinterquiz.html">Js Intermediate Quiz</a></li>
+              <li><a href="javaintroquiz.html">Java Introduction Quiz</a></li>
+              <li><a href="javainterquiz.html">Java Intermediate Quiz</a></li>
+                  
+                </ul>
+        
+          </li>
+        <li><a href="contact.html"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        
+      </ul>
+    </nav>
+
+  </header>
+  <main class="main">
+<!-- Lesson 1: Operators in Java -->
+<div class="lesson">
+    <h2> Operators in Java</h2>
+    <p><strong>Description:</strong> Operators are special symbols used to perform operations on variables and values. Java provides a wide range of operators for various tasks, including arithmetic, relational, logical, and others. Understanding operators is essential to write efficient Java code.</p>
+  </div>
+  
+  <!-- Lesson 2: Arithmetic Operators -->
+  <div class="lesson">
+    <h2> Arithmetic Operators</h2>
+    <p><strong>Description:</strong> Arithmetic operators are used to perform basic mathematical operations like addition, subtraction, multiplication, division, and modulus (remainder).</p>
+    <pre><code>
+  // Addition
+  int a = 10;
+  int b = 5;
+  int sum = a + b;  // Result: 15
+  
+  // Subtraction
+  int difference = a - b;  // Result: 5
+  
+  // Multiplication
+  int product = a * b;  // Result: 50
+  
+  // Division
+  int quotient = a / b;  // Result: 2 (integer division)
+  
+  // Modulus (remainder)
+  int remainder = a % b;  // Result: 0
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 3: Relational Operators -->
+  <div class="lesson">
+    <h2> Relational Operators</h2>
+    <p><strong>Description:</strong> Relational operators are used to compare two values and determine the relationship between them. They return a boolean result: <code>true</code> or <code>false</code>.</p>
+    <pre><code>
+  // Equal to
+  boolean equal = (a == b);  // Result: false
+  
+  // Not equal to
+  boolean notEqual = (a != b);  // Result: true
+  
+  // Greater than
+  boolean greaterThan = (a > b);  // Result: true
+  
+  // Less than
+  boolean lessThan = (a < b);  // Result: false
+  
+  // Greater than or equal to
+  boolean greaterThanEqual = (a >= b);  // Result: true
+  
+  // Less than or equal to
+  boolean lessThanEqual = (a <= b);  // Result: false
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 4: Logical Operators -->
+  <div class="lesson">
+    <h2> Logical Operators</h2>
+    <p><strong>Description:</strong> Logical operators are used to combine multiple boolean expressions. The result is a boolean value that indicates whether the combined condition is true or false.</p>
+    <pre><code>
+  // Logical AND (&&): Returns true if both conditions are true
+  boolean and = (a > b && b < 10);  // Result: true
+  
+  // Logical OR (||): Returns true if at least one condition is true
+  boolean or = (a > b || b > 10);  // Result: true
+  
+  // Logical NOT (!): Inverts the boolean value
+  boolean not = !(a > b);  // Result: false
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 5: Assignment Operators -->
+  <div class="lesson">
+    <h2> Assignment Operators</h2>
+    <p><strong>Description:</strong> Assignment operators are used to assign values to variables. The most common assignment operator is <code>=</code>, but there are also shorthand versions for combined operations.</p>
+    <pre><code>
+  // Simple assignment
+  int x = 5;
+  
+  // Addition assignment
+  x += 3;  // Equivalent to x = x + 3; Result: 8
+  
+  // Subtraction assignment
+  x -= 2;  // Equivalent to x = x - 2; Result: 6
+  
+  // Multiplication assignment
+  x *= 4;  // Equivalent to x = x * 4; Result: 24
+  
+  // Division assignment
+  x /= 6;  // Equivalent to x = x / 6; Result: 4
+  
+  // Modulus assignment
+  x %= 3;  // Equivalent to x = x % 3; Result: 1
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 6: Unary Operators -->
+  <div class="lesson">
+    <h2> Unary Operators</h2>
+    <p><strong>Description:</strong> Unary operators operate on a single operand. They include increment (++) and decrement (--) operators, as well as the negation operator (-) and logical NOT (!).</p>
+    <pre><code>
+  // Increment operator
+  int count = 5;
+  count++;  // Result: 6 (post-increment)
+  
+  // Decrement operator
+  count--;  // Result: 5 (post-decrement)
+  
+  // Unary negation
+  int neg = -count;  // Result: -5
+  
+  // Logical NOT
+  boolean flag = true;
+  flag = !flag;  // Result: false
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 7: Ternary Operator -->
+  <div class="lesson">
+    <h2> Ternary Operator</h2>
+    <p><strong>Description:</strong> The ternary operator is a shorthand for an <code>if-else</code> statement. It evaluates a condition and returns one of two values based on whether the condition is true or false.</p>
+    <pre><code>
+  // Syntax: condition ? value_if_true : value_if_false;
+  int max = (a > b) ? a : b;  // If a > b, max = a; otherwise, max = b
+  System.out.println(max);  // Output: 10
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 8: Instanceof Operator -->
+  <div class="lesson">
+    <h2> Instanceof Operator</h2>
+    <p><strong>Description:</strong> The <code>instanceof</code> operator is used to test whether an object is an instance of a specific class or implements an interface.</p>
+    <pre><code>
+  // Example using instanceof
+  String str = "Hello, World!";
+  boolean isString = str instanceof String;  // Result: true
+    </code></pre>
+  </div>
+  
+  </main>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>Created by <strong>Larmel Arizapa</strong></p>
+      <p>Contact: <a href="mailto:larmellearning@gmail.com">larmellearning@gmail.com</a></p>
+      <p>&copy; 2025 All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

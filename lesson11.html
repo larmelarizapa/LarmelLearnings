@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>  LarmelLearning</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/larmel.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/larmel.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename"> Larmel Arizapa</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Courses</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+                <li><a href="jsintro.html">Javascript Introduction</a> </a></li>
+                <li><a href="jsinter.html">JavaScript Intermediate</a></li>
+                <li><a href="javaintro.html">Java Introduction</a></li>
+                <li><a href="javainter.html">Java Intermediate</a></li>
+                
+                
+              </ul>
+              
+        </li>
+        <li><a href="resources.html"><i class="bi bi-robot"></i>&nbsp; Resources</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-question-octagon-fill">&nbsp;</i> &nbsp;<span>Take a Quiz</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="jsquiz.html">Js Introduction Quiz</a> </a></li>
+              <li><a href="jsinterquiz.html">Js Intermediate Quiz</a></li>
+              <li><a href="javaintroquiz.html">Java Introduction Quiz</a></li>
+              <li><a href="javainterquiz.html">Java Intermediate Quiz</a></li>
+                  
+                </ul>
+        
+          </li>
+        <li><a href="contact.html"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        
+      </ul>
+    </nav>
+
+  </header>
+  <main class="main">
+ <!-- Lesson 1: What is a Higher-Order Function? -->
+<div class="lesson">
+    <h2> What is a Higher-Order Function?</h2>
+    <p><strong>Description:</strong> A higher-order function is a function that either accepts one or more functions as arguments, returns a function as its result, or both.</p>
+    <pre><code>
+  function greet(name) {
+    return function(message) {
+      console.log(message + ", " + name);
+    };
+  }
+  
+  let greetLarmel = greet("Larmel");
+  greetLarmel("Hello"); // "Hello, Larmel"
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 2: Functions as Arguments -->
+  <div class="lesson">
+    <h2> Functions as Arguments</h2>
+    <p><strong>Description:</strong> A higher-order function can accept another function as an argument and execute it. This allows for greater flexibility and code reuse.</p>
+    <pre><code>
+  function processUserData(user, callback) {
+    // Simulating processing
+    callback(user);
+  }
+  
+  processUserData({name: "Larmel", age: 19}, function(user) {
+    console.log("User data processed: " + user.name + " is " + user.age + " years old.");
+  });
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 3: Functions Returning Functions -->
+  <div class="lesson">
+    <h2> Functions Returning Functions</h2>
+    <p><strong>Description:</strong> A higher-order function can return another function that can later be called with specific arguments. This is a common pattern for creating customized functions.</p>
+    <pre><code>
+  function multiplier(factor) {
+    return function(number) {
+      return number * factor;
+    };
+  }
+  
+  let double = multiplier(2);
+  console.log(double(5)); // 10
+  
+  let triple = multiplier(3);
+  console.log(triple(5)); // 15
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 4: Array Methods as Higher-Order Functions -->
+  <div class="lesson">
+    <h2> Array Methods as Higher-Order Functions</h2>
+    <p><strong>Description:</strong> JavaScript array methods like <code>map()</code>, <code>filter()</code>, and <code>reduce()</code> are examples of higher-order functions because they accept functions as arguments and operate on arrays.</p>
+    <pre><code>
+  // Using map to apply a function to each element in an array
+  let numbers = [1, 2, 3, 4];
+  let doubledNumbers = numbers.map(function(number) {
+    return number * 2;
+  });
+  console.log(doubledNumbers); // [2, 4, 6, 8]
+  
+  // Using filter to create a new array with elements that satisfy a condition
+  let evenNumbers = numbers.filter(function(number) {
+    return number % 2 === 0;
+  });
+  console.log(evenNumbers); // [2, 4]
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 5: The map(), filter(), and reduce() Methods -->
+  <div class="lesson">
+    <h2> The map(), filter(), and reduce() Methods</h2>
+    <p><strong>Description:</strong> These built-in methods are powerful higher-order functions for processing arrays in JavaScript. They simplify operations like transformation, filtering, and reducing data into a single value.</p>
+    <pre><code>
+  // Example of map() - Transforming array values
+  let numbers = [1, 2, 3];
+  let squares = numbers.map(function(number) {
+    return number * number;
+  });
+  console.log(squares); // [1, 4, 9]
+  
+  // Example of filter() - Filtering out unwanted values
+  let numbers = [1, 2, 3, 4, 5];
+  let oddNumbers = numbers.filter(function(number) {
+    return number % 2 !== 0;
+  });
+  console.log(oddNumbers); // [1, 3, 5]
+  
+  // Example of reduce() - Reducing array to a single value
+  let sum = numbers.reduce(function(accumulator, currentValue) {
+    return accumulator + currentValue;
+  }, 0);
+  console.log(sum); // 15
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 6: Closures and Higher-Order Functions -->
+  <div class="lesson">
+    <h2> Closures and Higher-Order Functions</h2>
+    <p><strong>Description:</strong> A closure is a function that retains access to the variables from its lexical scope, even after the outer function has finished executing. This can be useful when working with higher-order functions.</p>
+    <pre><code>
+  function createCounter() {
+    let count = 0;
+    return function() {
+      count++;
+      console.log(count);
+    };
+  }
+  
+  let counter = createCounter();
+  counter(); // 1
+  counter(); // 2
+  counter(); // 3
+    </code></pre>
+  </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>Created by <strong>Larmel Arizapa</strong></p>
+      <p>Contact: <a href="mailto:larmellearning@gmail.com">larmellearning@gmail.com</a></p>
+      <p>&copy; 2025 All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

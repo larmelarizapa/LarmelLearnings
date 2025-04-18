@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>  LarmelLearning</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/larmel.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/larmel.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename"> Larmel Arizapa</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Courses</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+                <li><a href="jsintro.html">Javascript Introduction</a> </a></li>
+                <li><a href="jsinter.html">JavaScript Intermediate</a></li>
+                <li><a href="javaintro.html">Java Introduction</a></li>
+                <li><a href="javainter.html">Java Intermediate</a></li>
+                
+                
+              </ul>
+              
+        </li>
+        <li><a href="resources.html"><i class="bi bi-robot"></i>&nbsp; Resources</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-question-octagon-fill">&nbsp;</i> &nbsp;<span>Take a Quiz</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="jsquiz.html">Js Introduction Quiz</a> </a></li>
+              <li><a href="jsinterquiz.html">Js Intermediate Quiz</a></li>
+              <li><a href="javaintroquiz.html">Java Introduction Quiz</a></li>
+              <li><a href="javainterquiz.html">Java Intermediate Quiz</a></li>
+                  
+                </ul>
+        
+          </li>
+        <li><a href="contact.html"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        
+      </ul>
+    </nav>
+
+  </header>
+  <main class="main">
+ <!-- Lesson 1: Introduction to Destructuring Assignment -->
+<div class="lesson">
+    <h2> Introduction to Destructuring Assignment</h2>
+    <p><strong>Description:</strong> Destructuring assignment allows you to unpack values from arrays or properties from objects into distinct variables. This feature makes your code cleaner and more concise.</p>
+  </div>
+  
+  <!-- Lesson 2: Destructuring Arrays -->
+  <div class="lesson">
+    <h2> Destructuring Arrays</h2>
+    <p><strong>Description:</strong> You can destructure arrays to extract individual elements into variables.</p>
+    <pre><code>
+  // Array destructuring
+  let numbers = [1, 2, 3, 4];
+  
+  let [first, second] = numbers;
+  console.log(first);  // 1
+  console.log(second); // 2
+  
+  // Skipping elements
+  let [, , third] = numbers;
+  console.log(third); // 3
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 3: Destructuring Objects -->
+  <div class="lesson">
+    <h2> Destructuring Objects</h2>
+    <p><strong>Description:</strong> You can destructure objects to assign their properties to variables. The variable names must match the property names.</p>
+    <pre><code>
+  // Object destructuring
+  let person = { name: "Larmel", age: 19 };
+  
+  let { name, age } = person;
+  console.log(name); // "Larmel"
+  console.log(age);  // 19
+  
+  // Renaming variables during destructuring
+  let { name: fullName, age: years } = person;
+  console.log(fullName); // "Larmel"
+  console.log(years);    // 19
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 4: Default Values in Destructuring -->
+  <div class="lesson">
+    <h2> Default Values in Destructuring</h2>
+    <p><strong>Description:</strong> You can assign default values to variables in case the value from the array or object is undefined.</p>
+    <pre><code>
+  // Array with default value
+  let numbers = [1, 2];
+  let [first, second, third = 3] = numbers;
+  console.log(third); // 3
+  
+  // Object with default value
+  let person = { name: "Larmel" };
+  let { name, age = 19 } = person;
+  console.log(age); // 19
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 5: Nested Destructuring -->
+  <div class="lesson">
+    <h2> Nested Destructuring</h2>
+    <p><strong>Description:</strong> Destructuring can also be done on nested arrays and objects, allowing you to unpack deeper values.</p>
+    <pre><code>
+  // Nested array destructuring
+  let numbers = [1, [2, 3], 4];
+  let [, [second, third]] = numbers;
+  console.log(second); // 2
+  console.log(third);  // 3
+  
+  // Nested object destructuring
+  let person = { name: "Larmel", address: { city: "Gumaca", barangay: "Binambang" } };
+  let { address: { city, barangay } } = person;
+  console.log(city);     // "Gumaca"
+  console.log(barangay); // "Binambang"
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 6: Destructuring in Function Parameters -->
+  <div class="lesson">
+    <h2> Destructuring in Function Parameters</h2>
+    <p><strong>Description:</strong> You can destructure values directly in function parameters to make it easier to work with objects and arrays passed to functions.</p>
+    <pre><code>
+  // Function with array destructuring
+  function sum([a, b]) {
+    return a + b;
+  }
+  console.log(sum([1, 2])); // 3
+  
+  // Function with object destructuring
+  function greet({ name, age }) {
+    console.log(`Hello, ${name}. You are ${age} years old.`);
+  }
+  greet({ name: "Larmel", age: 19 }); // "Hello, Larmel. You are 19 years old."
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 7: Destructuring with Rest Syntax -->
+  <div class="lesson">
+    <h2> Destructuring with Rest Syntax</h2>
+    <p><strong>Description:</strong> The rest syntax can be used to collect the remaining elements of an array or properties of an object after destructuring.</p>
+    <pre><code>
+  // Rest with array destructuring
+  let [first, ...rest] = [1, 2, 3, 4, 5];
+  console.log(first);  // 1
+  console.log(rest);   // [2, 3, 4, 5]
+  
+  // Rest with object destructuring
+  let { name, ...otherDetails } = { name: "Larmel", age: 19, city: "Gumaca" };
+  console.log(name);           // "Larmel"
+  console.log(otherDetails);   // { age: 19, city: "Gumaca" }
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 8: Practical Example of Destructuring -->
+  <div class="lesson">
+    <h2> Practical Example of Destructuring</h2>
+    <p><strong>Description:</strong> Here’s a real-world example of how destructuring can be used to simplify complex objects, like working with API responses or user data.</p>
+    <pre><code>
+  // Example of destructuring API response
+  let response = {
+    status: 200,
+    data: {
+      name: "Larmel",
+      age: 19,
+      address: { city: "Gumaca", barangay: "Binambang" }
+    }
+  };
+  
+  let { status, data: { name, age, address: { city, barangay } } } = response;
+  console.log(status);    // 200
+  console.log(name);      // "Larmel"
+  console.log(age);       // 19
+  console.log(city);      // "Gumaca"
+  console.log(barangay);  // "Binambang"
+    </code></pre>
+  </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>Created by <strong>Larmel Arizapa</strong></p>
+      <p>Contact: <a href="mailto:larmellearning@gmail.com">larmellearning@gmail.com</a></p>
+      <p>&copy; 2025 All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

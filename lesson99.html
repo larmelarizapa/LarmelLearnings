@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>  LarmelLearning</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/larmel.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/larmel.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename"> Larmel Arizapa</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Courses</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+                <li><a href="jsintro.html">Javascript Introduction</a> </a></li>
+                <li><a href="jsinter.html">JavaScript Intermediate</a></li>
+                <li><a href="javaintro.html">Java Introduction</a></li>
+                <li><a href="javainter.html">Java Intermediate</a></li>
+                
+                
+              </ul>
+              
+        </li>
+        <li><a href="resources.html"><i class="bi bi-robot"></i>&nbsp; Resources</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-question-octagon-fill">&nbsp;</i> &nbsp;<span>Take a Quiz</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="jsquiz.html">Js Introduction Quiz</a> </a></li>
+              <li><a href="jsinterquiz.html">Js Intermediate Quiz</a></li>
+              <li><a href="javaintroquiz.html">Java Introduction Quiz</a></li>
+              <li><a href="javainterquiz.html">Java Intermediate Quiz</a></li>
+                  
+                </ul>
+        
+          </li>
+        <li><a href="contact.html"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        
+      </ul>
+    </nav>
+
+  </header>
+  <main class="main">
+<!-- Lesson 1: Introduction to Local Storage -->
+<div class="lesson">
+    <h2> Introduction to Local Storage</h2>
+    <p><strong>Description:</strong> Local Storage allows you to store data in the browser on a user's computer. This data persists even after the browser is closed, providing a way to save and retrieve data between sessions.</p>
+  </div>
+  
+  <!-- Lesson 2: Storing Data in Local Storage -->
+  <div class="lesson">
+    <h2> Storing Data in Local Storage</h2>
+    <p><strong>Description:</strong> You can store data in Local Storage using the <code>localStorage.setItem()</code> method. Data is stored as key-value pairs.</p>
+    <pre><code>
+  // Storing a string in Local Storage
+  localStorage.setItem('username', 'Larmel');
+  
+  // Storing a number
+  localStorage.setItem('age', 19);
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 3: Retrieving Data from Local Storage -->
+  <div class="lesson">
+    <h2> Retrieving Data from Local Storage</h2>
+    <p><strong>Description:</strong> To retrieve data, use the <code>localStorage.getItem()</code> method. If the item does not exist, it will return <code>null</code>.</p>
+    <pre><code>
+  // Retrieving data from Local Storage
+  let username = localStorage.getItem('username');
+  console.log(username); // "Larmel"
+  
+  let age = localStorage.getItem('age');
+  console.log(age); // "19"
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 4: Removing Data from Local Storage -->
+  <div class="lesson">
+    <h2> Removing Data from Local Storage</h2>
+    <p><strong>Description:</strong> To remove an item from Local Storage, use the <code>localStorage.removeItem()</code> method.</p>
+    <pre><code>
+  // Removing an item from Local Storage
+  localStorage.removeItem('username');
+  
+  // Verify if it's removed
+  let username = localStorage.getItem('username');
+  console.log(username); // null
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 5: Clearing All Data in Local Storage -->
+  <div class="lesson">
+    <h2> Clearing All Data in Local Storage</h2>
+    <p><strong>Description:</strong> If you want to remove all items from Local Storage, use the <code>localStorage.clear()</code> method.</p>
+    <pre><code>
+  // Clearing all data from Local Storage
+  localStorage.clear();
+  
+  // Verify that all data is cleared
+  let age = localStorage.getItem('age');
+  console.log(age); // null
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 6: Storing Objects in Local Storage -->
+  <div class="lesson">
+    <h2> Storing Objects in Local Storage</h2>
+    <p><strong>Description:</strong> Local Storage only stores strings, but you can store objects by converting them to a string using <code>JSON.stringify()</code>.</p>
+    <pre><code>
+  // Storing an object in Local Storage
+  let person = { name: "Larmel", age: 19 };
+  localStorage.setItem('person', JSON.stringify(person));
+  
+  // Retrieving and parsing the object
+  let personData = JSON.parse(localStorage.getItem('person'));
+  console.log(personData); // { name: "Larmel", age: 19 }
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 7: Checking the Size of Local Storage -->
+  <div class="lesson">
+    <h2> Checking the Size of Local Storage</h2>
+    <p><strong>Description:</strong> You can check how many items are currently stored in Local Storage using <code>localStorage.length</code>.</p>
+    <pre><code>
+  // Checking the number of items in Local Storage
+  console.log(localStorage.length); // Number of items
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 8: Using Local Storage in a Real-World Example -->
+  <div class="lesson">
+    <h2> Using Local Storage in a Real-World Example</h2>
+    <p><strong>Description:</strong> Below is a practical example of how Local Storage can be used to save user preferences, such as theme settings.</p>
+    <pre><code>
+  // Save the theme preference
+  function setTheme(theme) {
+    localStorage.setItem('theme', theme);
+    document.body.className = theme;
+  }
+  
+  // Load the theme preference when the page is loaded
+  function loadTheme() {
+    let theme = localStorage.getItem('theme');
+    if (theme) {
+      document.body.className = theme;
+    }
+  }
+  
+  // Example usage
+  loadTheme();
+  setTheme('dark'); // This will set the page to dark mode
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 9: Practical Example with Login -->
+  <div class="lesson">
+    <h2> Practical Example with Login</h2>
+    <p><strong>Description:</strong> Here's an example of using Local Storage to store a user's login status so that they remain logged in even after a page refresh.</p>
+    <pre><code>
+  // Save login status
+  function loginUser(username) {
+    localStorage.setItem('loggedIn', true);
+    localStorage.setItem('username', username);
+  }
+  
+  // Check login status
+  function checkLogin() {
+    let loggedIn = localStorage.getItem('loggedIn');
+    if (loggedIn) {
+      let username = localStorage.getItem('username');
+      console.log(`Welcome back, ${username}!`);
+    } else {
+      console.log('Please log in');
+    }
+  }
+  
+  // Example usage
+  loginUser('Larmel');
+  checkLogin(); // "Welcome back, Larmel!"
+    </code></pre>
+  </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>Created by <strong>Larmel Arizapa</strong></p>
+      <p>Contact: <a href="mailto:larmellearning@gmail.com">larmellearning@gmail.com</a></p>
+      <p>&copy; 2025 All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

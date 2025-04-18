@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>  LarmelLearning</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/larmel.jpg" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/larmel.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename"> Larmel Arizapa</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Courses</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+                <li><a href="jsintro.html">Javascript Introduction</a> </a></li>
+                <li><a href="jsinter.html">JavaScript Intermediate</a></li>
+                <li><a href="javaintro.html">Java Introduction</a></li>
+                <li><a href="javainter.html">Java Intermediate</a></li>
+                
+                
+              </ul>
+              
+        </li>
+        <li><a href="resources.html"><i class="bi bi-robot"></i>&nbsp; Resources</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-question-octagon-fill">&nbsp;</i> &nbsp;<span>Take a Quiz</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="jsquiz.html">Js Introduction Quiz</a> </a></li>
+              <li><a href="jsinterquiz.html">Js Intermediate Quiz</a></li>
+              <li><a href="javaintroquiz.html">Java Introduction Quiz</a></li>
+              <li><a href="javainterquiz.html">Java Intermediate Quiz</a></li>
+                  
+                </ul>
+        
+          </li>
+        <li><a href="contact.html"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        
+      </ul>
+    </nav>
+
+  </header>
+  <main class="main">
+ <!-- Lesson 1: Introduction to Spread and Rest Operators -->
+<div class="lesson">
+    <h2> Introduction to Spread and Rest Operators</h2>
+    <p><strong>Description:</strong> Both the spread operator (<code>...</code>) and the rest operator (<code>...</code>) are used to handle multiple elements in a more convenient and concise way. Although they look the same, their usage and purpose are different.</p>
+  </div>
+  
+  <!-- Lesson 2: Spread Operator for Arrays -->
+  <div class="lesson">
+    <h2> Spread Operator for Arrays</h2>
+    <p><strong>Description:</strong> The spread operator allows elements of an array to be expanded into individual elements. It can be used to copy or combine arrays, or pass individual array elements as function arguments.</p>
+    <pre><code>
+  // Example of spreading an array
+  let numbers = [1, 2, 3, 4];
+  
+  // Copying an array using spread
+  let copiedNumbers = [...numbers];
+  console.log(copiedNumbers); // [1, 2, 3, 4]
+  
+  // Combining two arrays
+  let moreNumbers = [5, 6, 7];
+  let combinedNumbers = [...numbers, ...moreNumbers];
+  console.log(combinedNumbers); // [1, 2, 3, 4, 5, 6, 7]
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 3: Spread Operator for Objects -->
+  <div class="lesson">
+    <h2> Spread Operator for Objects</h2>
+    <p><strong>Description:</strong> The spread operator can also be used with objects to copy properties from one object to another or merge multiple objects.</p>
+    <pre><code>
+  // Example of spreading an object
+  let person = { name: "Larmel", age: 19 };
+  
+  // Copying an object using spread
+  let copiedPerson = { ...person };
+  console.log(copiedPerson); // { name: "Larmel", age: 19 }
+  
+  // Merging objects
+  let additionalInfo = { city: "Gumaca", country: "Philippines" };
+  let fullInfo = { ...person, ...additionalInfo };
+  console.log(fullInfo); // { name: "Larmel", age: 19, city: "Gumaca", country: "Philippines" }
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 4: Rest Operator for Function Parameters -->
+  <div class="lesson">
+    <h2> Rest Operator for Function Parameters</h2>
+    <p><strong>Description:</strong> The rest operator is used in function parameters to collect all remaining arguments into an array. It allows for more flexible function signatures.</p>
+    <pre><code>
+  // Function using rest operator
+  function sum(...numbers) {
+    return numbers.reduce((total, num) => total + num, 0);
+  }
+  
+  console.log(sum(1, 2, 3, 4)); // 10
+  console.log(sum(5, 6)); // 11
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 5: Rest Operator for Arrays -->
+  <div class="lesson">
+    <h2> Rest Operator for Arrays</h2>
+    <p><strong>Description:</strong> The rest operator can be used in array destructuring to capture the remaining elements into an array.</p>
+    <pre><code>
+  // Example using rest operator in array destructuring
+  let [first, second, ...rest] = [1, 2, 3, 4, 5];
+  
+  console.log(first);  // 1
+  console.log(second); // 2
+  console.log(rest);   // [3, 4, 5]
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 6: Rest Operator for Objects -->
+  <div class="lesson">
+    <h2> Rest Operator for Objects</h2>
+    <p><strong>Description:</strong> The rest operator can also be used in object destructuring to capture the remaining properties into a new object.</p>
+    <pre><code>
+  // Example using rest operator in object destructuring
+  let person = { name: "Larmel", age: 19, city: "Gumaca" };
+  let { name, ...otherInfo } = person;
+  
+  console.log(name);      // "Larmel"
+  console.log(otherInfo); // { age: 19, city: "Gumaca" }
+    </code></pre>
+  </div>
+  
+  <!-- Lesson 7: Differences Between Spread and Rest Operators -->
+  <div class="lesson">
+    <h2> Differences Between Spread and Rest Operators</h2>
+    <p><strong>Description:</strong> While both the spread and rest operators look the same, their functionality is different:</p>
+    <ul>
+      <li><strong>Spread:</strong> Used to expand or spread elements or properties. It’s used when copying or merging arrays and objects, or when passing arguments to a function.</li>
+      <li><strong>Rest:</strong> Used to collect remaining elements into an array or object. It’s used in function parameters or destructuring to collect multiple elements into a single variable.</li>
+    </ul>
+  </div>
+  
+  <!-- Lesson 8: Using Spread and Rest in a Real-World Example -->
+  <div class="lesson">
+    <h2> Using Spread and Rest in a Real-World Example</h2>
+    <p><strong>Description:</strong> Combining the spread and rest operators can simplify complex operations, such as handling dynamic arguments and updating object properties.</p>
+    <pre><code>
+  // Example combining both spread and rest
+  function updateUserInfo(user, ...newInfo) {
+    return { ...user, ...newInfo };
+  }
+  
+  let user = { name: "Larmel", age: 19 };
+  let updatedUser = updateUserInfo(user, { city: "Gumaca" });
+  
+  console.log(updatedUser); // { name: "Larmel", age: 19, city: "Gumaca" }
+    </code></pre>
+  </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>Created by <strong>Larmel Arizapa</strong></p>
+      <p>Contact: <a href="mailto:larmellearning@gmail.com">larmellearning@gmail.com</a></p>
+      <p>&copy; 2025 All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
